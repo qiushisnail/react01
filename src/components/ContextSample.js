@@ -19,7 +19,7 @@ const WithProvider = Comp => props => (
 
 const WithComsumer = Comp => props => (
 
-  < Context.Consumer >
+  <Context.Consumer >
     {/* 获取数据 */}
     {/* 必须内嵌一个函数 */}
     {value => <Comp {...props} value={value}></Comp>}
