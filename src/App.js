@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import logo from './logo.jpeg'
 import "./App.css"
+import { Button } from 'antd';
 
 // 函数型组件 传递props
 function Welcome1(props) {
@@ -57,6 +58,8 @@ export default class App extends Component {//  React.Component
     const jsx = <p>hello,你好</p>
     return ( //JSX html模板块
       <div>
+        {/* antd试用 */}
+        <Button type="primary">按钮</Button>
         App组件
         {/* 表达式 */}
         <h1>{name}</h1>
