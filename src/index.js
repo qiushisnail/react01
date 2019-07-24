@@ -14,6 +14,7 @@ import store from './store'
 import ReduxTest from './components/ReduxTest';
 
 import { Provider } from 'react-redux';
+import RouterSample from './components/RouterSample';
 
 
 //ReactDOM.render(<h1>React真酷</h1>, document.querySelector('#root'))
@@ -28,6 +29,7 @@ import { Provider } from 'react-redux';
 // ReactDOM.render(<ContextSample />, document.querySelector('#root'))
 // ReactDOM.render(<AntdTest />, document.querySelector('#root'))
 //ReactDOM.render(<KFormSample />, document.querySelector('#root'))
+ReactDOM.render(<RouterSample />, document.querySelector('#root'))
 
 
 
@@ -43,12 +45,12 @@ import { Provider } from 'react-redux';
 
 
 
-function render() {
-  ReactDOM.render((
-    <Provider store={store}>
-      <ReduxTest />
-    </Provider>
-  ), document.querySelector('#root'))
-}
-render()
+// function render() {
+//   ReactDOM.render((
+//     <Provider store={store}>
+//       <ReduxTest />
+//     </Provider>
+//   ), document.querySelector('#root'))
+// }
+// render()
 //store.subscribe(render);
