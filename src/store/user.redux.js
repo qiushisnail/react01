@@ -12,14 +12,18 @@ export default (state = initialState, action) => {
       return state
   }
 };
-
-
 export function login() {
-  return (dispatch) => {
-    // mock 一个登录
-    setTimeout(() => {
-      dispatch({ type: 'login' })
-    }, 1000)
-  }
 
+  return { type: 'login_request' }
 }
+
+// for redux-saga
+// export function login() {
+//   return (dispatch) => {
+//     // mock 一个登录
+//     setTimeout(() => {
+//       dispatch({ type: 'login' })
+//     }, 1000)
+//   }
+
+// }
